@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/viewsCSS/loginForm.css" />
+  </head>
+  <body>
+    <script
+      messages="<%=messages%>"
+      messageType="<%=messageType%>"
+      src="/viewsJS/messages.js"
+    ></script>
+
+    <div class="registerForm">
+      <form action="/login" method="post">
+        <div class="name">
+          <label for="name">Name</label>
+          <input class="textInput" type="text" id="name" name="name" />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            class="textInput"
+            type="password"
+            id="password"
+            name="password"
+          />
+        </div>
+        <div class="submitBtn">
+          <input type="submit" value="login" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

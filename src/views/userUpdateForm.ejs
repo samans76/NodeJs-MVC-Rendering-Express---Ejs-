@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/viewsCSS/userUpdateForm.css" />
+  </head>
+  <body>
+    <div class="insertFormSpot">
+      <form action="/user/<%=users.id%>/update" method="post">
+        <input
+          class="idInput"
+          type="text"
+          placeholder="id"
+          name="id"
+          value="<%=users.id%>"
+        />
+        <input
+          class="nameInput"
+          type="text"
+          placeholder="Name"
+          name="name"
+          value="<%=users.name%>"
+        />
+        <input
+          class="passwordInput"
+          type="text"
+          placeholder="Password"
+          name="password"
+          value="<%=users.password%>"
+        />
+        <input class="submitInput" type="submit" value="update" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 360px;
+  font-size: 45px;
+  padding: 47px;
+  border-radius: 20px;
+  color: white;
+  background-color: #ec484a;
+}

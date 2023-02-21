@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/viewsCSS/mainPage.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="title">Saman nodeJs website rendering Demo</div>
+      <div class="description">
+        the focus of this demo is on some back-end website rendering basics
+        using nodeJs, express and ejs. Go to users route by clicking on users
+        button.
+      </div>
+      <div class="buttons">
+        <div class="usersBtn">
+          <form action="usersBtn" method="post">
+            <input class="usersButton" type="submit" value="Users" />
+          </form>
+        </div>
+        <div class="authBtns">
+          <div class="loginBtn">
+            <form action="loginBtn" method="post">
+              <input class="loginButton" type="submit" value="Login" />
+            </form>
+          </div>
+          <div class="registerBtn">
+            <form action="registerBtn" method="post">
+              <input class="registerButton" type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+        <div class="dashboardBtn">
+          <form action="dashboardBtn" method="post">
+            <input class="dashboardButton" type="submit" value="dashboard" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script data="<%=isLoggedIn%>" src="/viewsJS/mainPage.js"></script>
+  </body>
+</html>

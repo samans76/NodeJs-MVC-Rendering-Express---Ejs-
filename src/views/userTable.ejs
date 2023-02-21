@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/viewsCSS/userTable.css" />
+  </head>
+  <body>
+    <script
+      messages="<%=messages%>"
+      messageType="<%=messageType%>"
+      src="/viewsJS/messages.js"
+    ></script>
+
+    <div class="insertFormSpot">
+      <form action="" method="post">
+        <input class="idInput" type="text" placeholder="id" name="id" />
+        <input class="nameInput" type="text" placeholder="Name" name="name" />
+        <input
+          class="passwordInput"
+          type="text"
+          placeholder="Password"
+          name="password"
+        />
+        <input class="submitInput" type="submit" value="submit" />
+      </form>
+    </div>
+    <div class="userTableSpot">
+      <div class="tableTitle">Users</div>
+      <table class="userTable">
+        <tbody>
+          <tr class="tableHeader">
+            <th class="headerId">Id</th>
+            <th class="headerName">Name</th>
+            <th class="headerPassword">Password</th>
+          </tr>
+          <tr class="tableRow">
+            <td class="tableId">1</td>
+            <td class="tableName">saman</td>
+            <td class="tablePassword">25</td>
+            <td class="tableUpdate">
+              <form action="/user/id/updateButton" method="post">
+                <input type="submit" value="update" />
+              </form>
+            </td>
+            <td class="tableRemove">
+              <form action="/user/id/remove" method="post">
+                <input type="submit" value="remove" />
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script usersData="<%=users%>" src="/viewsJS/userTable.js"></script>
+  </body>
+</html>

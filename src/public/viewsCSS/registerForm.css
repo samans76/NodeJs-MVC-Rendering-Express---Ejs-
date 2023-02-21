@@ -1,0 +1,48 @@
+:root {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registerForm {
+  width: 525px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 0.2rem;
+  border: 3px solid gray;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.registerForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 40px 0;
+}
+
+.registerForm form div {
+  width: 400px;
+  margin: 10px;
+  position: relative;
+}
+
+.registerForm form div .textInput {
+  position: absolute;
+  right: 0;
+
+  width: 200px;
+  height: 28px;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+}
+
+.registerForm form .submitBtn input {
+  margin-top: 15px;
+  /* margin-left: 150px; */
+  width: 400px;
+  height: 38px;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  border: 2px solid gray;
+  cursor: pointer;
+}

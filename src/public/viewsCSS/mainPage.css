@@ -1,0 +1,83 @@
+:root {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.15rem 0 1.5rem 0;
+}
+
+.mainContainer .description {
+  width: 1125px;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  word-wrap: break-word;
+}
+
+.mainContainer .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.mainContainer .buttons .usersButton {
+  font-size: 1rem;
+  width: 190px;
+  height: 58px;
+  background-color: #e3e3e3;
+  border: 2px solid darkgray;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.mainContainer .buttons .authBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer .buttons .authBtns .loginButton {
+  font-size: 0.6rem;
+  width: 115px;
+  height: 35px;
+  background-color: #e3e3e3;
+  border: 2px solid darkgray;
+  border-radius: 0.3rem;
+  margin: 0 8px 0 8px;
+  cursor: pointer;
+}
+
+.mainContainer .buttons .authBtns .registerButton {
+  font-size: 0.6rem;
+  width: 115px;
+  height: 35px;
+  background-color: #e3e3e3;
+  border: 2px solid darkgray;
+  border-radius: 0.3rem;
+  margin: 0 8px 0 8px;
+  cursor: pointer;
+}
+
+.dashboardBtn .dashboardButton {
+  font-size: 0.65rem;
+  width: 115px;
+  height: 35px;
+  background-color: #e3e3e3;
+  border: 2px solid darkgray;
+  border-radius: 0.25rem;
+  margin: 5px 8px 0 8px;
+  cursor: pointer;
+}
